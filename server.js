@@ -25,9 +25,10 @@ app.use("/api/uploads", profilepix);
 
 //google auth
 app.get("/api/google-client-id", (req, res) => {
-  res.json({ clientId: "309744924880-7ud98991mma53rf9d96f6iubtnn7itcs.apps.googleusercontent.com" });
+  res.json({
+    clientId: process.env.GOOGLE_CLIENT_ID,
+  });
 });
-
 
 // Home route
 app.get("/", async (req, res) => {
