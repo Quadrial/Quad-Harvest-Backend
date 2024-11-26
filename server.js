@@ -14,8 +14,8 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:5000",
-      "https://quad-harvest-backend.onrender.com",
+      "http://localhost:5173",
+      "https://quadharvest-git-main-quadrials-projects.vercel.app",
     ],
     credentials: true,
   })
