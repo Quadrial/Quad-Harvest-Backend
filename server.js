@@ -16,6 +16,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://quadharvest-git-main-quadrials-projects.vercel.app",
+      "https://quadharvest-icoil3n5i-quadrials-projects.vercel.app",
     ],
     credentials: true,
   })
