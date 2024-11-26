@@ -23,18 +23,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/posts", postRoutes);
 app.use("/api/uploads", profilepix);
 
-//google auth
-app.get("/api/google-client-id", (req, res) => {
-  res.json({
-    clientId: process.env.GOOGLE_CLIENT_ID,
-  });
-});
 
 // Home route
 app.get("/", async (req, res) => {
   res.status(200).json({
     status: "success",
-    msg: "Welcome to the image generator API!",
+    msg: "Welcome to the Quad-Harvest API!",
   });
 });
 
